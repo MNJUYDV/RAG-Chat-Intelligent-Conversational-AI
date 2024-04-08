@@ -34,20 +34,19 @@ The RAG ChatBot is an intelligent conversational agent powered by the Retrieval-
 
 Run the following command to build the memory index:
 
-```shell
+```
 python chat/memory_builder.py --chunk-size 1000
 Run the Chatbot
 To interact with the RAG Chatbot, run the following command:
 
-shell
-Copy code
 streamlit run chatbot/chatbot_app.py -- --model openchat
 Run the RAG Chatbot
 For the RAG Chatbot, use the following command:
 
-shell
-Copy code
 streamlit run chatbot/rag_chatbot_app.py -- --model openchat --k 2 --synthesis-strategy async_tree_summarization
+
+```
+
 Contributing
 Contributions are welcome! Please read the CONTRIBUTING.md file for guidelines.
 
